@@ -1,5 +1,6 @@
 package example.spring.boot.service;
 
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import example.spring.boot.common.BusinessException;
 import example.spring.boot.dao.mapper.HelloMapper;
 import example.spring.boot.dao.model.Hello;
@@ -15,18 +16,11 @@ import java.util.List;
  * Created by liuluming on 2017/2/17.
  */
 @Service
-public class HelloService {
+public class HelloService extends ServiceImpl<HelloMapper, Hello> {
 
     @Autowired
     private HelloMapper helloMapper;
 
-    @Transactional(rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
-    public int insert(Hello hello) throws BusinessException {
-//        int i= helloMapper.insert(name);
-//        System.out.println("数量="+i);
-        //baomidou
-        return helloMapper.insert(hello);
-    }
 
     @Transactional(rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
     public int delete(Hello hello) throws BusinessException {
