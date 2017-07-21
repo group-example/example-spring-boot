@@ -18,27 +18,4 @@
         SELECT * FROM hello WHERE NAME like concat("%",#{name},"%");
     </select>
 
-    <select id="addHello">
-        INSERT INTO hello(id,name,age,gmt_modify,gmt_create) VALUES(#{id},#{name},#{age},NOW(),NOW())
-    </select>
-
-    <!--<insert id="insert" >-->
-        <!--INSERT Ihello1ello(id,name,age,gmt_modify,gmt_create) VALUES(#{id},#{name},#{age},NOW(),NOW())-->
-    <!--</insert>-->
-
-    <!--<delete id="deleteById" >-->
-        <!--delete fhello1ello where id=#{id}-->
-    <!--</delete>-->
-
-    <!--<select id="selectById" resultTyHelloello">-->
-        <!--select * fhello1ello where id=#{id}-->
-    <!--</select>-->
-
-    <!--<select id="selectList" resultMap="BaseResultMap">-->
-        <!--select * fhello1ello where name like concat("%",#{name},"%")-->
-    <!--</select>-->
-
-    <!--<update id="updateById" >-->
-        <!--updhello1ello set name=#{name},age=#{age} ,gmt_modify=now() where id=#{id}-->
-    <!--</update>-->
 </mapper>

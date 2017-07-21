@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +21,7 @@ public class ControllerExceptionHandler {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @org.springframework.web.bind.annotation.ExceptionHandler(value = BusinessException.class)
+    @ExceptionHandler(value = BusinessException.class)
     @ResponseBody
     public GeneralResponse<String> errorHandler1(HttpServletRequest req, BusinessException e) {
         logger.warn(e.getMessage(),e);
@@ -31,7 +32,7 @@ public class ControllerExceptionHandler {
     }
 
 
-    @org.springframework.web.bind.annotation.ExceptionHandler(value = Exception.class)
+    @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public GeneralResponse<String> errorHandler2(HttpServletRequest req, Exception e) {
         GeneralResponse<String> r = new GeneralResponse<>();

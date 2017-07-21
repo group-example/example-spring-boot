@@ -14,6 +14,5 @@ import org.springframework.scheduling.annotation.EnableAsync;
 public class SpringBootStarter {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootStarter.class, args);
-        //test
     }
 }

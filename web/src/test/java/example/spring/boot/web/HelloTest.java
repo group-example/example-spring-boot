@@ -1,5 +1,6 @@
 package example.spring.boot.web;
 
+import example.spring.boot.common.BusinessException;
 import example.spring.boot.common.SystemConfig;
 import example.spring.boot.dao.model.Hello;
 import example.spring.boot.service.HelloService;
@@ -26,7 +27,7 @@ public class HelloTest extends  BaseTest{
     @Test
     public void insetTest() throws Exception {
 //        helloService.insert("CCC");
-        List<Hello> u = helloService.findByName("AAA");
+        List<Hello> u = helloService.selectByName("AAA");
         System.out.println("u.size="+u.size());
     }
 
@@ -45,10 +46,24 @@ public class HelloTest extends  BaseTest{
 
     @Test
     public void selectTest(){
-        logger.info("第一次查询");
-        logger.info("结果集大小："+ helloService.findByName("AAA").size());
-        logger.info("第二次查询");
-        logger.info("结果集大小："+ helloService.findByName("AAA").size());
+        try {
+            logger.info("第一次查询");
+            logger.info("结果集大小："+ helloService.selectByName("AAA").size());
+            logger.info("第二次查询");
+            logger.info("结果集大小："+ helloService.selectByName("AAA").size());
+        } catch (BusinessException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void getPublicIpTest(){
+        try {
+           String ip= helloService.getPulicIp();
+            System.out.println("-----------------------------The IP is:"+ip+"-----------------------");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

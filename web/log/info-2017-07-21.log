@@ -1,0 +1,357 @@
+2017-07-21 09:56:47 [main] INFO  example.spring.boot.web.HelloTest [? : ?] - Starting HelloTest on liulumingdeMacBook-Pro.local with PID 11935 (started by liuluming in /Users/liuluming/git/example-spring-boot/web)
+2017-07-21 09:56:47 [main] INFO  example.spring.boot.web.HelloTest [? : ?] - No active profile set, falling back to default profiles: default
+2017-07-21 09:56:47 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [? : ?] - HV000001: Hibernate Validator 5.3.5.Final
+2017-07-21 09:56:49 [main] INFO  example.spring.boot.web.configration.TaskExecutorConfig [? : ?] - 创建线程池，获得配置corePoolSize=10
+2017-07-21 09:56:49 [main] INFO  example.spring.boot.web.configration.TaskExecutorConfig [? : ?] - 创建线程池，获得配置maxPoolSize=10
+2017-07-21 09:56:49 [main] INFO  example.spring.boot.web.configration.TaskExecutorConfig [? : ?] - 创建线程池，获得配置queryCapacity=20
+2017-07-21 09:56:53 [main] INFO  org.eclipse.jetty.util.log [? : ?] - Logging initialized @8546ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-07-21 09:56:56 [main] INFO  com.netflix.config.sources.URLConfigurationSource [? : ?] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-07-21 09:56:56 [main] INFO  com.netflix.config.sources.URLConfigurationSource [? : ?] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [? : ?] - Context refreshed
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [? : ?] - Found {0} custom documentation plugin(s)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Scanning for api listing references
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method delete was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: delete belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method testException was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: testException belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: index belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method insert was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: insert belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectById was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: selectById belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectList was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: selectList belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method updateName was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: updateName belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Created resource listing Path: /default/代码示例 Description: 代码示例 Position: 0
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/delete.example.spring.boot.web.controller.HelloController.delete.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/delete.example.spring.boot.web.controller.HelloController.delete.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method delete was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method delete was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: java.lang.String(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key java.lang.String(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: java.lang.String(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/index.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/index.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [? : ?] - Generating unique operation named: indexUsingGET_1
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/insert.example.spring.boot.web.controller.HelloController.insert.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/insert.example.spring.boot.web.controller.HelloController.insert.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method insert was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method insert was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/list/{id}.example.spring.boot.web.controller.HelloController.selectById.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/list/{id}.example.spring.boot.web.controller.HelloController.selectById.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectById was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectById was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: java.util.List<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key java.util.List<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/list.example.spring.boot.web.controller.HelloController.selectList.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/list.example.spring.boot.web.controller.HelloController.selectList.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectList was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectList was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: int(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key int(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: int(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key int(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/exception.example.spring.boot.web.controller.HelloController.testException.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/exception.example.spring.boot.web.controller.HelloController.testException.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method testException was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method testException was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/update.example.spring.boot.web.controller.HelloController.updateName.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/update.example.spring.boot.web.controller.HelloController.updateName.DefaultGenericTypeNamingStrategy
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method updateName was 代码示例
+2017-07-21 09:56:56 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method updateName was 代码示例
+2017-07-21 09:56:56 [main] INFO  example.spring.boot.web.HelloTest [? : ?] - Started HelloTest in 10.72 seconds (JVM running for 12.096)
+2017-07-21 09:58:34 [main] INFO  example.spring.boot.web.HelloTest [? : ?] - Starting HelloTest on liulumingdeMacBook-Pro.local with PID 11950 (started by liuluming in /Users/liuluming/git/example-spring-boot/web)
+2017-07-21 09:58:34 [main] INFO  example.spring.boot.web.HelloTest [? : ?] - No active profile set, falling back to default profiles: default
+2017-07-21 09:58:34 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [? : ?] - HV000001: Hibernate Validator 5.3.5.Final
+2017-07-21 09:58:37 [main] INFO  example.spring.boot.web.configration.TaskExecutorConfig [? : ?] - 创建线程池，获得配置corePoolSize=10
+2017-07-21 09:58:37 [main] INFO  example.spring.boot.web.configration.TaskExecutorConfig [? : ?] - 创建线程池，获得配置maxPoolSize=10
+2017-07-21 09:58:37 [main] INFO  example.spring.boot.web.configration.TaskExecutorConfig [? : ?] - 创建线程池，获得配置queryCapacity=20
+2017-07-21 09:58:40 [main] INFO  org.eclipse.jetty.util.log [? : ?] - Logging initialized @8777ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-07-21 09:58:43 [main] INFO  com.netflix.config.sources.URLConfigurationSource [? : ?] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-07-21 09:58:43 [main] INFO  com.netflix.config.sources.URLConfigurationSource [? : ?] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [? : ?] - Context refreshed
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [? : ?] - Found {0} custom documentation plugin(s)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Scanning for api listing references
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method delete was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: delete belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method testException was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: testException belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: index belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method insert was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: insert belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectById was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: selectById belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectList was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: selectList belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method updateName was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: updateName belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Created resource listing Path: /default/代码示例 Description: 代码示例 Position: 0
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/delete.example.spring.boot.web.controller.HelloController.delete.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/delete.example.spring.boot.web.controller.HelloController.delete.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method delete was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method delete was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: java.lang.String(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key java.lang.String(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: java.lang.String(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/index.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/index.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [? : ?] - Generating unique operation named: indexUsingGET_1
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/insert.example.spring.boot.web.controller.HelloController.insert.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/insert.example.spring.boot.web.controller.HelloController.insert.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method insert was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method insert was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/list/{id}.example.spring.boot.web.controller.HelloController.selectById.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/list/{id}.example.spring.boot.web.controller.HelloController.selectById.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectById was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectById was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: java.util.List<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key java.util.List<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/list.example.spring.boot.web.controller.HelloController.selectList.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/list.example.spring.boot.web.controller.HelloController.selectList.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectList was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectList was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: int(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key int(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: int(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key int(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/exception.example.spring.boot.web.controller.HelloController.testException.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/exception.example.spring.boot.web.controller.HelloController.testException.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method testException was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method testException was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/update.example.spring.boot.web.controller.HelloController.updateName.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/update.example.spring.boot.web.controller.HelloController.updateName.DefaultGenericTypeNamingStrategy
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method updateName was 代码示例
+2017-07-21 09:58:44 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method updateName was 代码示例
+2017-07-21 09:58:44 [main] INFO  example.spring.boot.web.HelloTest [? : ?] - Started HelloTest in 11.518 seconds (JVM running for 12.763)
+2017-07-21 10:02:21 [main] INFO  example.spring.boot.web.HelloTest [? : ?] - Starting HelloTest on liulumingdeMacBook-Pro.local with PID 11980 (started by liuluming in /Users/liuluming/git/example-spring-boot/web)
+2017-07-21 10:02:21 [main] INFO  example.spring.boot.web.HelloTest [? : ?] - No active profile set, falling back to default profiles: default
+2017-07-21 10:02:21 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [? : ?] - HV000001: Hibernate Validator 5.3.5.Final
+2017-07-21 10:02:23 [main] INFO  example.spring.boot.web.configration.TaskExecutorConfig [? : ?] - 创建线程池，获得配置corePoolSize=10
+2017-07-21 10:02:23 [main] INFO  example.spring.boot.web.configration.TaskExecutorConfig [? : ?] - 创建线程池，获得配置maxPoolSize=10
+2017-07-21 10:02:23 [main] INFO  example.spring.boot.web.configration.TaskExecutorConfig [? : ?] - 创建线程池，获得配置queryCapacity=20
+2017-07-21 10:02:27 [main] INFO  org.eclipse.jetty.util.log [? : ?] - Logging initialized @8440ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-07-21 10:02:30 [main] INFO  com.netflix.config.sources.URLConfigurationSource [? : ?] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-07-21 10:02:30 [main] INFO  com.netflix.config.sources.URLConfigurationSource [? : ?] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [? : ?] - Context refreshed
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [? : ?] - Found {0} custom documentation plugin(s)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Scanning for api listing references
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method delete was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: delete belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method testException was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: testException belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: index belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method insert was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: insert belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectById was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: selectById belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectList was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: selectList belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method updateName was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Request mapping: updateName belongs to groups: [[ResourceGroup{groupName='代码示例', position=0, controller=example.spring.boot.web.controller.HelloController}]] 
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [? : ?] - Created resource listing Path: /default/代码示例 Description: 代码示例 Position: 0
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/delete.example.spring.boot.web.controller.HelloController.delete.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/delete.example.spring.boot.web.controller.HelloController.delete.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method delete was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method delete was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: java.lang.String(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key java.lang.String(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: java.lang.String(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/index.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/index.example.spring.boot.web.controller.HelloController.index.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method index was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [? : ?] - Generating unique operation named: indexUsingGET_1
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/insert.example.spring.boot.web.controller.HelloController.insert.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/insert.example.spring.boot.web.controller.HelloController.insert.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method insert was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method insert was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/list/{id}.example.spring.boot.web.controller.HelloController.selectById.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/list/{id}.example.spring.boot.web.controller.HelloController.selectById.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectById was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectById was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: java.util.List<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key java.util.List<example.spring.boot.dao.model.Hello>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.common.GeneralResponse<java.util.List<example.spring.boot.dao.model.Hello>>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator [? : ?] - Cache key generated: example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelProperties with key example.spring.boot.dao.model.Hello(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/list.example.spring.boot.web.controller.HelloController.selectList.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/list.example.spring.boot.web.controller.HelloController.selectList.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectList was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method selectList was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: int(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key int(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: int(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key int(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/exception.example.spring.boot.web.controller.HelloController.testException.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/exception.example.spring.boot.web.controller.HelloController.testException.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method testException was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method testException was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache models with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator [? : ?] - Cache Key Generated: example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache modelDependencies with key example.spring.boot.common.GeneralResponse<java.lang.Integer>(true)
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator [? : ?] - Cache key generated: /hello/update.example.spring.boot.web.controller.HelloController.updateName.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect [? : ?] - Caching aspect applied for cache operations with key /hello/update.example.spring.boot.web.controller.HelloController.updateName.DefaultGenericTypeNamingStrategy
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method updateName was 代码示例
+2017-07-21 10:02:30 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping [? : ?] - Group for method updateName was 代码示例
+2017-07-21 10:02:30 [main] INFO  example.spring.boot.web.HelloTest [? : ?] - Started HelloTest in 11.175 seconds (JVM running for 12.309)

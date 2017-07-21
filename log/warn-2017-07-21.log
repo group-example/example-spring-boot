@@ -1,0 +1,13 @@
+2017-07-21 09:24:13 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner [? : ?] - No MyBatis mapper was found in '[example.spring.boot.dao.mapper.*]' package. Please check your configuration.
+2017-07-21 09:24:22 [restartedMain] WARN  org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [? : ?] - No spring.application.name found, defaulting to 'application'
+2017-07-21 09:24:22 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource [? : ?] - No URLs will be polled as dynamic configuration sources.
+2017-07-21 09:24:22 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource [? : ?] - No URLs will be polled as dynamic configuration sources.
+2017-07-21 09:27:34 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner [? : ?] - No MyBatis mapper was found in '[example.spring.boot.dao.mapper.*]' package. Please check your configuration.
+2017-07-21 09:27:36 [restartedMain] WARN  org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [? : ?] - No spring.application.name found, defaulting to 'application'
+2017-07-21 09:27:36 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource [? : ?] - No URLs will be polled as dynamic configuration sources.
+2017-07-21 09:30:57 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner [? : ?] - No MyBatis mapper was found in '[example.spring.boot.dao.mapper.*]' package. Please check your configuration.
+2017-07-21 09:31:00 [restartedMain] WARN  org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [? : ?] - No spring.application.name found, defaulting to 'application'
+2017-07-21 09:31:00 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource [? : ?] - No URLs will be polled as dynamic configuration sources.
+2017-07-21 09:45:46 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner [? : ?] - No MyBatis mapper was found in '[example.spring.boot.dao.mapper.*]' package. Please check your configuration.
+2017-07-21 09:45:49 [restartedMain] WARN  org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [? : ?] - No spring.application.name found, defaulting to 'application'
+2017-07-21 09:45:49 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource [? : ?] - No URLs will be polled as dynamic configuration sources.

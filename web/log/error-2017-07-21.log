@@ -1,0 +1,3 @@
+2017-07-21 09:56:52 [main] ERROR com.baomidou.mybatisplus.MybatisConfiguration [? : ?] - mapper[example.spring.boot.dao.mapper.HelloMapper.findByName] is ignored, because it's exists, maybe from xml file
+2017-07-21 09:58:39 [main] ERROR com.baomidou.mybatisplus.MybatisConfiguration [? : ?] - mapper[example.spring.boot.dao.mapper.HelloMapper.findByName] is ignored, because it's exists, maybe from xml file
+2017-07-21 10:02:26 [main] ERROR com.baomidou.mybatisplus.MybatisConfiguration [? : ?] - mapper[example.spring.boot.dao.mapper.HelloMapper.findByName] is ignored, because it's exists, maybe from xml file
