@@ -10,9 +10,9 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
-import org.thymeleaf.spring4.SpringTemplateEngine;
+import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
-import org.thymeleaf.templateresolver.TemplateResolver;
+import org.thymeleaf.templateresolver.*;
 
 import javax.mail.internet.MimeMessage;
 import java.io.File;
@@ -62,24 +62,24 @@ public class MailTest extends  BaseTest{
 
     @Test
     public void sendTemplateMail() throws Exception {
-        MimeMessage mimeMessage = mailSender.createMimeMessage();
-        MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
-        helper.setFrom("dyc87112@qq.com");
-        helper.setTo("461290158@qq.com");
-        helper.setSubject("附件邮件");
-
-        Map<String, Object> model = new HashMap();
-        model.put("username", "didi");
-
-        Context context=new Context();
-        context.setVariables(model);
-        TemplateEngine templateEngine=new SpringTemplateEngine();
-        TemplateResolver templateResolver=new ClassLoaderTemplateResolver();
-        templateEngine.setTemplateResolver(templateResolver);
-        String text = templateEngine.process("templates/index.html",context);
-
-        helper.setText(text, true);
-        mailSender.send(mimeMessage);
+//        MimeMessage mimeMessage = mailSender.createMimeMessage();
+//        MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
+//        helper.setFrom("dyc87112@qq.com");
+//        helper.setTo("461290158@qq.com");
+//        helper.setSubject("附件邮件");
+//
+//        Map<String, Object> model = new HashMap();
+//        model.put("username", "didi");
+//
+//        Context context=new Context();
+//        context.setVariables(model);
+//        TemplateEngine templateEngine=new SpringTemplateEngine();
+//        TemplateResolver templateResolver=new ClassLoaderTemplateResolver();
+//        templateEngine.setTemplateResolver(templateResolver);
+//        String text = templateEngine.process("templates/index.html",context);
+//
+//        helper.setText(text, true);
+//        mailSender.send(mimeMessage);
     }
 
 }

@@ -4,6 +4,7 @@ package example.spring.boot.web; /**
 
 import org.apache.commons.lang.StringUtils;
 
+import java.lang.reflect.Method;
 import java.util.BitSet;
 
 /**
@@ -28,9 +29,10 @@ public class BitMapTest {
         bitSet = new BitSet(4);
 
         //将数组内容组bitmap
-        for (int i = 0; i < bitArray.length; i++) {
-            bitSet.set(bitArray[i].hashCode());
-        }
+//        for (int i = 0; i < bitArray.length; i++) {
+//            bitSet.set(bitArray[i].hashCode());
+//        }
+//
 
     }
 
@@ -43,13 +45,50 @@ public class BitMapTest {
     }
 
     public static void main(String[] args) {
-        BitMapTest test=new BitMapTest();
-        try {
-            boolean isInList=test.isInList("172.168.1.5");
-            System.out.println("是否存在："+isInList);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
+//        TestHashCode t1=new TestHashCode(1);
+//        TestHashCode t2=new TestHashCode(1);
+//
+//        System.out.println(t1==t2);
+//        System.out.println(t1.equals(t2));
+        new Thread(new Runnable()
+        {
+            public void run()
+            {
+                System.out.println("runnable run");
+            }
+        }){
+            public void run()
+            {
+                System.out.println("subthread run");//执行。
+            }
+        }.start();
+
     }
 
+}
+
+class TestHashCode{
+    private int value;
+    public TestHashCode(int value){
+        this.value=value;
+    }
+    @Override
+    public int hashCode(){
+        return value;
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if(this==obj){
+            return true;
+        }
+        if(obj instanceof TestHashCode){
+            TestHashCode testHashCode=(TestHashCode)obj;
+            if(testHashCode.value==this.value){
+                return true;
+            }
+        }
+        return false;
+    }
 }
