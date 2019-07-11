@@ -1,144 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE RelativeLayou>
-
-<!-- 从高到低：OFF，FATAL，ERROR，WARN，INFO，DEBUG，TRACE，ALL -->
-<!-- 日志输出规则：输出比当前ROOT级别高的日志，另外亦可考虑filter级别过滤器 -->
-
-<!-- scan=true，一旦配置文件发生改变，将会被重新加载，默认为true； scanPeriod，监测配置文件是否有修改的时间间隔，默认单位是毫秒，scan为true才生效，默认的时间间隔为1分钟； debug=true，打印logback内部日志信息，实时查看logback运行状态，默认为false； -->
-<configuration scan="true" scanPeriod="60 seconds" debug="false">
-    <!-- 定义日志文件位置 -->
-    <property name="logDir" value="/run/xiaoming/schedule/logs/" />
-    <!-- 日志最大历史30天 -->
-    <property name="maxHistory" value="30" />
-
-    <!-- 彩色日志 -->
-    <!-- 彩色日志依赖的渲染类 -->
-    <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter" />
-    <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter" />
-    <conversionRule conversionWord="wEx"
-                    converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter" />
-    <!-- 彩色日志格式 -->
+<configuration>
+    <conversionRule conversionWord="ip" converterClass="example.spring.boot.common.IpAddressUtil"/>
+    <springProperty scope="context" name="log.application.name" source="log.application.name"/>
+    <springProperty scope="context" name="log.pro.level" source="log.pro.level"/>
+    <springProperty scope="context" name="log.dev.level" source="log.dev.level"/>
+    <springProperty scope="context" name="log.file.name" source="log.file.name"/>
+    <springProperty scope="context" name="log.file.maxIndex" source="log.file.maxIndex"/>
+    <springProperty scope="context" name="log.file.maxFileSize" source="log.file.maxFileSize"/>
+    <property name="LOG_PATTERN" value="[${log.application.name}] [%ip] [${PID}] [%d{yyyy-MM-dd HH:mm:ss.SSS}] [%p] [%t] [%c] [%M] [%L] : %m%n"/>
     <property name="CONSOLE_LOG_PATTERN"
-              value="${CONSOLE_LOG_PATTERN:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}" />
-
+              value="%highlight([${log.application.name}] [%ip]) [${PID}] [%d{yyyy-MM-dd HH:mm:ss.SSS}] %cyan([%p]) [%t] %boldMagenta([%c]) : %boldGreen(%m%n)"/>
     <!-- 控制台输出日志 -->
-    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <!-- 对日志进行格式化 -->
-        <!--<layout class="ch.qos.logback.classic.PatternLayout">-->
-            <!--<pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger [%file : %line] - %msg%n</pattern>-->
-        <!--</layout>-->
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${CONSOLE_LOG_PATTERN}</pattern>
-            <charset>utf8</charset>
         </encoder>
     </appender>
-
-    <appender name="DEBUG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>${logDir}/debug-%d{yyyy-MM-dd}.log</FileNamePattern>
-            <maxHistory>${maxHistory}</maxHistory>
+    <!-- 按照固定窗口模式生成日志文件，当文件大于${log.file.maxFileSize}时，生成新的日志文件。窗口大小是1到${log.file.maxIndex}，当保存了${log.file.maxIndex}个归档文件后，将覆盖最早的日志 -->
+    <appender name="fileAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${catalina.home:-.}/logs/${log.file.name}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${catalina.home:-.}/logs/${log.file.name}.%i.log</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>${log.file.maxIndex}</maxIndex>
         </rollingPolicy>
-        <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger [%file : %line] - %msg%n</pattern>
-        </layout>
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>DEBUG</level>  <!-- 只打印Debug日志 -->
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
-        </filter>
+        <triggeringPolicy
+                class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>${log.file.maxFileSize}</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
     </appender>
-
-    <appender name="INFO_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>${logDir}/info-%d{yyyy-MM-dd}.log</FileNamePattern>
-            <maxHistory>${maxHistory}</maxHistory>
-        </rollingPolicy>
-        <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger [%file : %line] - %msg%n</pattern>
-        </layout>
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>INFO</level>  <!-- 只打印Info日志 -->
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
-        </filter>
-    </appender>
-
-    <appender name="WARN_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>${logDir}/warn-%d{yyyy-MM-dd}.log</FileNamePattern>
-            <maxHistory>${maxHistory}</maxHistory>
-        </rollingPolicy>
-        <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger [%file : %line] - %msg%n</pattern>
-        </layout>
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>WARN</level>  <!-- 只打印Warn日志 -->
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
-        </filter>
-    </appender>
-
-    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>${logDir}/error-%d{yyyy-MM-dd}.log</FileNamePattern>
-            <maxHistory>${maxHistory}</maxHistory>
-        </rollingPolicy>
-        <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger [%file : %line] - %msg%n</pattern>
-        </layout>
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>ERROR</level>  <!-- 只打印Error日志 -->
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
-        </filter>
-    </appender>
-
-    <!-- 异步输出INFO日志 -->
-    <appender name="INFO_ASYNC" class="ch.qos.logback.classic.AsyncAppender">
-        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
-        <discardingThreshold>0</discardingThreshold>
-        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
-        <queueSize>512</queueSize>
-        <!-- 添加附加的appender,最多只能添加一个 -->
-        <appender-ref ref="INFO_FILE" />
-    </appender>
-
-    <!-- 异步输出WARN日志 -->
-    <appender name="WARN_ASYNC" class="ch.qos.logback.classic.AsyncAppender">
-        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
-        <discardingThreshold>0</discardingThreshold>
-        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
-        <queueSize>512</queueSize>
-        <!-- 添加附加的appender,最多只能添加一个 -->
-        <appender-ref ref="WARN_FILE" />
-    </appender>
-
-    <!-- 异步输出ERROR日志 -->
-    <appender name="ERROR_ASYNC" class="ch.qos.logback.classic.AsyncAppender">
-        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
-        <discardingThreshold>0</discardingThreshold>
-        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
-        <queueSize>512</queueSize>
-        <!-- 添加附加的appender,最多只能添加一个 -->
-        <appender-ref ref="ERROR_FILE" />
-    </appender>
-
-    <!-- package log level configure -->
-    <logger name="org.springframework" level="WARN" />
-    <logger name="org.apache.ibatis" level="INFO" />
-    <logger name="org.mybatis.spring" level="INFO" />
-    <logger name="java.sql" level="INFO" />
-    <logger name="ch.qos.logback" level="ERROR" />
-    <logger name="druid.sql" level="INFO" />
-    <logger name="com.alibaba" level="WARN" />
-    <!--<logger name="luming.example.springboot.dao" level="DEBUG"/>-->
-    <!-- root级别 WARN -->
-    <root level="info">
-        <appender-ref ref="CONSOLE" />
-        <!-- 异步文件输出 -->
-        <appender-ref ref="INFO_ASYNC" />
-        <appender-ref ref="WARN_ASYNC" />
-        <appender-ref ref="ERROR_ASYNC" />
-    </root>
-
+    <springProfile name="pro,pre,test,t1,t2,t3">
+        <root level="${log.pro.level}">
+            <appender-ref ref="fileAppender" />
+        </root>
+    </springProfile>
+    <springProfile name="dev">
+        <root level="${log.dev.level}">
+            <appender-ref ref="consoleAppender" />
+            <appender-ref ref="fileAppender" />
+        </root>
+    </springProfile>
 </configuration>

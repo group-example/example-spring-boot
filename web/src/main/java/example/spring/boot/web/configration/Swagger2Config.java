@@ -12,7 +12,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * swwager2的配置文件
- * Created by liuluming on 2017/2/10.
+ * 请求路径：应用路径/swagger-ui.html
+ *
+ * @author liuluming
  */
 @Configuration //告诉spring加载该类该配置类，相当于xml里面的<beans>标签
 @EnableSwagger2 //启用swagger2
@@ -27,6 +29,7 @@ public class Swagger2Config {
                 .paths(PathSelectors.any())
                 .build();
     }
+
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("example-spring-boot API")

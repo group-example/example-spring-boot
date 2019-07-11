@@ -1,6 +1,6 @@
 package example.spring.boot.web;
 
-import example.spring.boot.common.SystemConfig;
+//import example.spring.boot.common.SystemConfig;
 import example.spring.boot.dao.model.Hello;
 import example.spring.boot.service.HelloService;
 import org.junit.Test;
@@ -24,9 +24,9 @@ public class HelloTest extends BaseTest {
 
     @Autowired
     private HelloService helloService;
-
-    @Autowired
-    private SystemConfig systemConfig;
+//
+//    @Autowired
+//    private SystemConfig systemConfig;
 
     @Test
     public void insetTest() throws Exception {
@@ -73,13 +73,13 @@ public class HelloTest extends BaseTest {
         }
     }
 
-    @Test
-    public void configTest() {
-        String test = systemConfig.getWeixinToken();
-        logger.info("配置测试:token=" + test);
-        String appId = systemConfig.getWeixinAppId();
-        logger.info("配置测试:appId=" + appId);
-    }
+//    @Test
+//    public void configTest() {
+//        String test = systemConfig.getWeixinToken();
+//        logger.info("配置测试:token=" + test);
+//        String appId = systemConfig.getWeixinAppId();
+//        logger.info("配置测试:appId=" + appId);
+//    }
 
     @Test
     public void selectTest() {

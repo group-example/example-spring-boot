@@ -11,22 +11,29 @@
 
     <artifactId>web</artifactId>
     <dependencies>
+
+
+        <!-- 使用thymeleaf作为模板引擎 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
         <dependency>
             <groupId>cn.liuluming</groupId>
             <artifactId>service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty.http2</groupId>
-            <artifactId>http2-server</artifactId>
-            <version>9.4.12.v20180830</version>
-            <!--<scope>test</scope>-->
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-alpn-conscrypt-server</artifactId>
-            <version>9.4.12.v20180830</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.eclipse.jetty.http2</groupId>-->
+<!--            <artifactId>http2-server</artifactId>-->
+<!--            <version>9.4.12.v20180830</version>-->
+<!--            &lt;!&ndash;<scope>test</scope>&ndash;&gt;-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.eclipse.jetty</groupId>-->
+<!--            <artifactId>jetty-alpn-conscrypt-server</artifactId>-->
+<!--            <version>9.4.12.v20180830</version>-->
+<!--        </dependency>-->
         <!--<dependency>-->
             <!--<groupId>org.eclipse.jetty</groupId>-->
             <!--<artifactId>jetty-alpn-server</artifactId>-->

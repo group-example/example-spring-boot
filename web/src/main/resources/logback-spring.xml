@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <conversionRule conversionWord="ip" converterClass="example.spring.boot.web.configration.LogBackIpConfig"/>
+    <conversionRule conversionWord="ip" converterClass="example.spring.boot.common.IpAddressUtil"/>
     <springProperty scope="context" name="log.application.name" source="log.application.name"/>
     <springProperty scope="context" name="log.pro.level" source="log.pro.level"/>
     <springProperty scope="context" name="log.dev.level" source="log.dev.level"/>

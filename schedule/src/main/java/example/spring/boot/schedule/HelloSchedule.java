@@ -6,9 +6,6 @@ import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by liuluming on 2017/2/15.
- */
 @Component
 public class HelloSchedule {
 

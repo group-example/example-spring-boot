@@ -1,4 +1,4 @@
-package example.spring.boot.web.configration;
+package example.spring.boot.common;
 
 import ch.qos.logback.classic.pattern.ClassicConverter;
 import ch.qos.logback.classic.spi.ILoggingEvent;
@@ -10,11 +10,10 @@ import java.net.SocketException;
 import java.util.Enumeration;
 
 /**
- * 获取IP工具类 ，用于logback打印日志使用
+ * 获取IP地址工具类 ，可用于logback打印日志使用
  *
- * @author liu
  */
-public class LogBackIpConfig extends ClassicConverter {
+public class IpAddressUtil extends ClassicConverter {
 
     private static String fristLocalHostIp = null;
 
