@@ -11,8 +11,6 @@
 
     <artifactId>web</artifactId>
     <dependencies>
-
-
         <!-- 使用thymeleaf作为模板引擎 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
