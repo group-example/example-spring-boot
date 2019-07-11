@@ -32,7 +32,7 @@ public class Swagger2Config {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("example-spring-boot API")
+                .title("example-spring-boot-web 项目 API测试文档")
                 .description("使用spring-boot构建")
 //                .termsOfServiceUrl("http://blog.didispace.com/")
 //                .contact("刘路明")

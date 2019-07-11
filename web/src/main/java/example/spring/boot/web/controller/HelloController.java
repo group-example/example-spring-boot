@@ -7,6 +7,7 @@ import example.spring.boot.service.HelloService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -20,6 +21,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/hello")
 @Api(value = "代码示例",description = "描述")
+@Slf4j
 public class HelloController {
 
     @Autowired
@@ -32,6 +34,7 @@ public class HelloController {
     public GeneralResponse<List<Hello>> list(@ApiParam(value = "姓名",required = false) @RequestParam(required = false) String name) {
         GeneralResponse resp=new GeneralResponse();
         resp.setData(helloService.findByName(name));
+        log.info("测试日志");
         return resp;
     }
 
@@ -58,7 +61,7 @@ public class HelloController {
     @ResponseBody
     public GeneralResponse<Integer> insert(@ApiParam(value = "Hello",required = true) @ModelAttribute Hello hello) throws BusinessException {
         GeneralResponse resp=new GeneralResponse();
-        resp.setData(helloService.insert(hello));
+        resp.setData(helloService.save(hello));
         return resp;
     }
 

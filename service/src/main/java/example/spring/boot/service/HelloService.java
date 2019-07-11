@@ -1,10 +1,10 @@
 package example.spring.boot.service;
 
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import example.spring.boot.common.BusinessException;
 import example.spring.boot.dao.mapper.HelloMapper;
 import example.spring.boot.dao.model.Hello;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
@@ -52,7 +52,7 @@ public class HelloService extends ServiceImpl<HelloMapper, Hello> {
 //        int i= helloMapper.insert(name);
 //        System.out.println("数量="+i);
         //baomidou
-        EntityWrapper<Hello> wrapper = new EntityWrapper<>();
+        QueryWrapper<Hello> wrapper = new QueryWrapper<>();
         wrapper.like("name",name);
         System.out.println(wrapper.getSqlSegment());
         return helloMapper.selectList(wrapper);

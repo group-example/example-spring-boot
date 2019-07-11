@@ -1,11 +1,12 @@
 package example.spring.boot.dao.config;
 
-import com.baomidou.mybatisplus.MybatisConfiguration;
-import com.baomidou.mybatisplus.MybatisXMLLanguageDriver;
-import com.baomidou.mybatisplus.entity.GlobalConfiguration;
-import com.baomidou.mybatisplus.enums.DBType;
-import com.baomidou.mybatisplus.plugins.PaginationInterceptor;
-import com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.core.MybatisConfiguration;
+import com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver;
+import com.baomidou.mybatisplus.core.config.GlobalConfig;
+import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
+import com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean;
+//import com.baomidou.mybatisplus.generator.config.GlobalConfig;
 import org.apache.ibatis.mapping.DatabaseIdProvider;
 import org.apache.ibatis.plugin.Interceptor;
 import org.mybatis.spring.annotation.MapperScan;
@@ -34,6 +35,7 @@ public class MyBatisPlusConfig {
     @Autowired
     private MybatisProperties properties;
 
+
     @Autowired
     private ResourceLoader resourceLoader = new DefaultResourceLoader();
 
@@ -44,7 +46,7 @@ public class MyBatisPlusConfig {
     private DatabaseIdProvider databaseIdProvider;
 
     /**
-     *   mybatis-plus分页插件
+     * mybatis-plus分页插件
      */
     @Bean
     public PaginationInterceptor paginationInterceptor() {
@@ -52,9 +54,11 @@ public class MyBatisPlusConfig {
         page.setDialectType("mysql");
         return page;
     }
+
     /**
      * 这里全部使用mybatis-autoconfigure 已经自动加载的资源。不手动指定
      * 配置文件和mybatis-boot的配置文件同步
+     *
      * @return
      */
     @Bean
@@ -65,16 +69,15 @@ public class MyBatisPlusConfig {
         if (StringUtils.hasText(this.properties.getConfigLocation())) {
             mybatisPlus.setConfigLocation(this.resourceLoader.getResource(this.properties.getConfigLocation()));
         }
-        mybatisPlus.setConfiguration(properties.getConfiguration());
+        mybatisPlus.setConfigurationProperties(properties.getConfigurationProperties());
         if (!ObjectUtils.isEmpty(this.interceptors)) {
             mybatisPlus.setPlugins(this.interceptors);
         }
         // MP 全局配置，更多内容进入类看注释
-        GlobalConfiguration globalConfig = new GlobalConfiguration();
-        globalConfig.setDbType(DBType.MYSQL.name());
-        // ID 策略 AUTO->`0`("数据库ID自增") INPUT->`1`(用户输入ID") ID_WORKER->`2`("全局唯一ID") UUID->`3`("全局唯一ID")
-        globalConfig.setIdType(0);
-        globalConfig.setDbColumnUnderline(true);
+        GlobalConfig.DbConfig dbConfig = new GlobalConfig.DbConfig();
+        dbConfig.setIdType(IdType.AUTO);
+        GlobalConfig globalConfig = new GlobalConfig();
+        globalConfig.setDbConfig(dbConfig);
         mybatisPlus.setGlobalConfig(globalConfig);
 
         MybatisConfiguration mc = new MybatisConfiguration();

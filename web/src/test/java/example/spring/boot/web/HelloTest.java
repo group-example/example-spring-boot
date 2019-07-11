@@ -66,7 +66,7 @@ public class HelloTest extends BaseTest {
             hello.setAge(1);
             hello.setName("51");
             try {
-                helloService.insert(hello);
+                helloService.save(hello);
             } catch (Exception e) {
                 e.printStackTrace();
             }
