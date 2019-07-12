@@ -10,15 +10,14 @@ import java.util.Date;
  */
 @TableName("hello")
 public class Hello {
+
     private Long id;
     private String name;
     private Integer age;
 
-    //    @TableField("gmt_create")
-    private Date gmtCreate;
+    private Date createTime;
 
-    //    @TableField("gmt_modify")
-    private Date gmtModify;
+    private Date updateTime;
 
     public Long getId() {
         return id;
@@ -44,19 +43,20 @@ public class Hello {
         this.age = age;
     }
 
-    public Date getGmtCreate() {
-        return gmtCreate;
+    public Date getCreateTime() {
+        return createTime;
     }
 
-    public void setGmtCreate(Date gmtCreate) {
-        this.gmtCreate = gmtCreate;
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 
-    public Date getGmtModify() {
-        return gmtModify;
+    public Date getUpdateTime() {
+        return updateTime;
     }
 
-    public void setGmtModify(Date gmtModify) {
-        this.gmtModify = gmtModify;
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
+
 }

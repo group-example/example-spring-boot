@@ -1,5 +1,6 @@
 package example.spring.boot.web.aspect;
 
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
@@ -21,8 +22,8 @@ import java.util.Arrays;
  */
 @Aspect
 @Component
-public class WebLogAspect {
-    private Logger logger= LoggerFactory.getLogger(this.getClass());
+@Slf4j
+public class WebRequestAspect {
 
     ThreadLocal<Long> startTime = new ThreadLocal<>();
 
@@ -37,16 +38,16 @@ public class WebLogAspect {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         // 记录下请求内容
-        logger.info("URL : " + request.getRequestURL().toString());
-        logger.info("HTTP_METHOD : " + request.getMethod());
-        logger.info("IP : " + request.getRemoteAddr());
-        logger.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
-        logger.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
-
+        log.info("------ REQUEST BEGIN ------");
+        log.info("URL : " + request.getRequestURL().toString());
+        log.info("HTTP_METHOD : " + request.getMethod());
+        log.info("IP : " + request.getRemoteAddr());
+        log.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+        log.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
     }
 
     @AfterReturning(returning = "ret", pointcut = "webLog()")
     public void doAfterReturning(Object ret) throws Throwable {
-        logger.info("SPEND TIME : " + (System.currentTimeMillis() - startTime.get())+" ms");
+        log.info("------ REQUEST END. SPEND TIME:" + (System.currentTimeMillis() - startTime.get())+" ms. ------");
     }
 }

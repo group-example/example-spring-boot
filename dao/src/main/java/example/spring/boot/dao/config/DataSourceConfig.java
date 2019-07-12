@@ -3,8 +3,8 @@ package example.spring.boot.dao.config;
 import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -14,6 +14,10 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
 
 import javax.sql.DataSource;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 参考 https://my.oschina.net/bddiudiu/blog/808390
@@ -21,16 +25,48 @@ import javax.sql.DataSource;
  * Created by liuxing on 2017/7/11.
  */
 @Configuration
+@Slf4j
 @PropertySource("classpath:application-dao.properties")
-public class DruidConfig {
+public class DataSourceConfig {
 
-    private Logger logger = LoggerFactory.getLogger(DruidConfig.class);
-
-    @Bean
     @Primary
+    @Bean(name = "dynamicDataSource")
+    public DynamicDataSource dynamicDataSource(@Qualifier("writeDataSource") DataSource writeSource,
+                                               @Qualifier("readDataSource1") DataSource readSource1) {
+        Map<Object, Object> dataSourceMap = new HashMap<>();
+        dataSourceMap.put(DataSourceTypeEnum.WRITE.getCode(), writeSource);
+        dataSourceMap.put(DataSourceTypeEnum.READ.getCode() + "1", readSource1);
+        DynamicDataSource dynamicDataSource = DynamicDataSource.getInstance();
+        dynamicDataSource.setTargetDataSources(dataSourceMap);
+        dynamicDataSource.setDefaultTargetDataSource(writeSource);
+        dynamicDataSource.afterPropertiesSet();
+        return dynamicDataSource;
+    }
+
+    /**
+     * 主库只有一个
+     *
+     * @return
+     */
+    @Bean(name = "writeDataSource")
     @ConfigurationProperties(prefix = "spring.datasource")
-    public DataSource druidDataSource() {
-        return DruidDataSourceBuilder.create().build();
+    public DataSource writeDataSource() {
+        log.info("-------------------- DataSource-Write init ---------------------");
+        DataSource dataSource =DruidDataSourceBuilder.create().build();
+        return dataSource;
+    }
+
+    /**
+     * 有多少个从库就要配置多少个
+     *
+     * @return
+     */
+    @Bean(name = "readDataSource1")
+    @ConfigurationProperties(prefix = "spring.datasource.slave1")
+    public DataSource readDataSource1() {
+        log.info("-------------------- DataSource-Read1 init ---------------------");
+        DataSource dataSource =DruidDataSourceBuilder.create().build();
+        return dataSource;
     }
 
     @Bean
