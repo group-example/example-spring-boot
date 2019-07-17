@@ -17,8 +17,8 @@ import java.util.Arrays;
 
 
 /**
- *
- * Created by liuluming on 2017/2/15.
+ * 这个功能用spring的interceptor也可以实现。
+ * 继续用切面的目的： 留给其他业务作参考。
  */
 @Aspect
 @Component
@@ -38,16 +38,16 @@ public class WebRequestAspect {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         // 记录下请求内容
-        log.info("------ REQUEST BEGIN ------");
-        log.info("URL : " + request.getRequestURL().toString());
-        log.info("HTTP_METHOD : " + request.getMethod());
-        log.info("IP : " + request.getRemoteAddr());
-        log.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
-        log.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
+        log.debug("------ REQUEST BEGIN ------");
+        log.debug("URL : " + request.getRequestURL().toString());
+        log.debug("HTTP_METHOD : " + request.getMethod());
+        log.debug("IP : " + request.getRemoteAddr());
+        log.debug("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+        log.debug("ARGS : " + Arrays.toString(joinPoint.getArgs()));
     }
 
     @AfterReturning(returning = "ret", pointcut = "webLog()")
     public void doAfterReturning(Object ret) throws Throwable {
-        log.info("------ REQUEST END. SPEND TIME:" + (System.currentTimeMillis() - startTime.get())+" ms. ------");
+        log.debug("------ REQUEST END. SPEND TIME:" + (System.currentTimeMillis() - startTime.get())+" ms. ------");
     }
 }
