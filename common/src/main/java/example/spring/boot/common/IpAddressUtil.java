@@ -28,7 +28,7 @@ public class IpAddressUtil extends ClassicConverter {
         return ip;
     }
 
-    private static String getFristLocalHostIp() throws SocketException {
+    static String getFristLocalHostIp() throws SocketException {
         if (fristLocalHostIp != null) {
             return fristLocalHostIp;
         }

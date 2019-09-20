@@ -72,7 +72,7 @@ public class MyBatisPlusConfig {
         // MP 全局配置，更多内容进入类看注释
         GlobalConfig.DbConfig dbConfig = new GlobalConfig.DbConfig();
         dbConfig.setIdType(IdType.AUTO);
-        dbConfig.setDbType(DbType.MYSQL);
+//        dbConfig.setDbType(DbType.MYSQL);
         GlobalConfig globalConfig = new GlobalConfig();
         globalConfig.setDbConfig(dbConfig);
         mybatisPlus.setGlobalConfig(globalConfig);
